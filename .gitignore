@@ -1,0 +1,16 @@
+# Client data never leaves this computer
+clients/*
+!clients/_example/
+!clients/_example/**
+!clients/README.md
+
+# Local settings and secrets
+.env
+*.local.*
+.claude/settings.local.json
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
