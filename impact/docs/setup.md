@@ -13,7 +13,7 @@
    npx playwright install chromium
    ```
 
-   The first installs career-ops' tools; the second lets it make CV PDFs and read job pages.
+   The first installs career-ops' tools; the second downloads the browser it uses for CV PDFs. If that download stalls, skip it: each client folder has a `.env` with `CAREER_OPS_BROWSER_AUTODETECT=true`, so career-ops uses Edge or Chrome instead (tested on this computer, 17 Nov 2026).
 3. Open the folder in **Claude Code** (desktop app, Code tab). Claude reads `CLAUDE.md`, career-ops' `AGENTS.md`, then `impact/RULES.md`.
 4. Optional: `npm run doctor` checks the setup.
 
