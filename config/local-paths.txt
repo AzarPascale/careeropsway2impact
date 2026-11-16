@@ -1,0 +1,6 @@
+# Way2Impact fork-local paths (DATA_CONTRACT.md "Fork-local paths").
+# career-ops updates (node update-system.mjs) never touch these.
+impact/
+clients/
+README.career-ops.md
+NOTICE.md

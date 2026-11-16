@@ -1,0 +1,40 @@
+# Career-ops profile for this client (schema: config/profile.example.yml at the repo root).
+# Sector details (segment, eligibility, consent) are in config/impact.yml.
+candidate:
+  full_name: ""          # used on the CV PDF only; use the client code everywhere else
+  email: ""
+  phone: ""
+  location: ""
+  linkedin: ""
+  portfolio_url: ""
+  photo: ""              # leave empty except Gulf and Middle East corporate and CSR roles (impact/modes/cv.md section 2)
+
+target_roles:
+  primary: []
+  archetypes: []         # one per target role: {name, level, fit: primary/secondary/adjacent}
+
+narrative:
+  headline: ""
+  exit_story: ""         # segment D: one plain line on why the last role ended
+  superpowers: []
+  proof_points: []
+
+compensation:
+  target_range: ""       # UN: grade, not a number. INGO or national: band
+  currency: "USD"
+  minimum: ""            # pay floor
+  location_flexibility: ""
+
+location:
+  country: ""
+  city: ""
+  timezone: ""
+  visa_status: ""
+  authorized_in: []      # same as config/impact.yml eligibility.right_to_work
+  needs_sponsorship:
+
+language:
+  output: en
+
+cv:
+  output_format: "html"  # html (PDF), text (markdown to paste into portals), latex

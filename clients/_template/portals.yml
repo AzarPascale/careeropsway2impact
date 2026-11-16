@@ -1,0 +1,53 @@
+# Job sources for this client, in career-ops format (full schema: templates/portals.example.yml).
+# Sector rules: impact/modes/scan.md. Wider list of sector boards: impact/config/portals.yml.
+# Discovery only: reports and roundups always link the employer's official apply page.
+
+title_filter:
+  # Set to the client's target roles and keywords (config/impact.yml targets.keywords).
+  positive:
+    - "[Target role]"
+  negative:
+    # Grants are out of scope (coach decision, 16 Nov 2026). Consultancies stay in.
+    - "grant"
+    - "call for proposals"
+    - "sub-grant"
+    - "fee required"
+    - "processing fee"
+
+search_queries:
+  # Agent scan mode (browsing). Replace [Target role] and enable the ones that fit.
+  - name: UN Careers (Secretariat)
+    query: 'site:careers.un.org "[Target role]"'
+    enabled: false
+  - name: Impactpool
+    query: 'site:impactpool.org "[Target role]"'
+    enabled: false
+  - name: UNjobs
+    query: 'site:unjobs.org "[Target role]"'
+    enabled: false
+  - name: UNDP procurement notices (consultancies)
+    query: 'site:procurement-notices.undp.org "[Target role]" consultant'
+    enabled: false
+  - name: Devex Jobs
+    query: 'site:devex.com/jobs "[Target role]"'
+    enabled: false
+
+tracked_companies:
+  # ReliefWeb through the Way2Impact parser (no tokens, no key). One entry per search.
+  # --search: the client's target role words. Optional: --country "Jordan", --type consultancy (or job).
+  - name: ReliefWeb
+    careers_url: https://reliefweb.int/jobs
+    scan_method: local_parser
+    parser:
+      command: node
+      script: impact/parsers/reliefweb.mjs
+      args: ["--search", "[Target role]", "--limit", "40"]
+      format: jobs-json-v1
+    enabled: false
+
+  # Target employers on ATS platforms career-ops reads (Workday, SuccessFactors, Oracle, Taleo,
+  # Greenhouse, Lever, SmartRecruiters...). Add the careers URL; check with node validate-portals.mjs.
+  # Find an employer's ATS with: node discover-ats.mjs
+  # - name: Example INGO
+  #   careers_url: https://example.wd3.myworkdayjobs.com/External
+  #   enabled: true

@@ -1,0 +1,45 @@
+# EXAMPLE sector profile (fictional client). Real clients: node impact/scripts/client.mjs new K-01
+code: K-00-example
+created: 2026-11-16
+consent:
+  ai_use: yes            # yes / no. If no, do not use this tool for this client.
+  date: 2026-11-16
+package: Accompaniment   # Starter / Accompaniment / Accompaniment Plus / single service
+segment: B               # A new grads / B moving up / C shifters / D repositioning
+segment_note: "4 years INGO MEAL officer, wants P-2/P-3 MEAL roles in UN or senior officer in INGO"
+
+targets:
+  roles: ["MEAL Officer", "Monitoring and Evaluation Specialist", "Programme Officer (MEAL)"]
+  sub_sectors: [food security, cash assistance, protection]
+  employer_types: [UN, INGO]
+  levels: ["P-2", "P-3", "NO-B", "INGO Senior Officer"]
+  keywords: ["MEAL", "monitoring and evaluation", "M&E", "accountability", "KoBoToolbox", "logframe"]
+  locations_ok: ["Amman", "Beirut", "Nairobi", "home-based"]
+  remote_ok: true
+  consultancy_ok: true
+
+eligibility:
+  nationalities: ["Fictionland"]
+  right_to_work: ["Fictionland"]
+  languages:
+    English: fluent
+    Arabic: native
+    French: intermediate (B1)
+  highest_degree: "Master's in Development Studies"
+  years_relevant_experience: 4
+  age_for_ypp: not applicable
+
+mobility:
+  family_duty_station_only: false
+  non_family_ok: true
+  high_risk_ok: "case by case"
+
+needs:
+  pay_floor: "[ask client]"
+  urgency: "employed, not urgent"
+  dealbreakers: ["unpaid", "contracts under 3 months"]
+  learning_budget_usd: 300
+
+files:
+  cv_received: true
+  linkedin_received: true

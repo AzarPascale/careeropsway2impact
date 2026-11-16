@@ -1,7 +1,10 @@
 # Notice
 
-Impact Career Ops is inspired by **career-ops** (https://github.com/career-ops-hq/career-ops), released under the MIT License. The ideas we reuse are its overall workflow: evaluate before applying, block-based reports, a 1 to 5 score with a skip threshold, a fact check against the source CV, a tracker, and drafts only (never auto-submit).
+Impact Career Ops is a fork of **career-ops** (https://github.com/career-ops-hq/career-ops), copyright its authors and released under the MIT License (see `LICENSE`). The career-ops code, modes, templates and documentation in this repository are theirs, kept as published at commit `287c3e5` (16 November 2026), except for small, marked edits to `CLAUDE.md`, `.gitignore` and `README.md`. The original README is kept as `README.career-ops.md`.
 
-No code or text from career-ops is copied into this repository. All rules, modes and sector content were written for the social impact sector by Way2Impact, using public research listed in `docs/sources.md`, and the coach's own methods (in `library/`).
+The Way2Impact additions are:
+- `impact/` (sector rules, overlays, sector knowledge, the coach's methods, content strategy, the ReliefWeb parser and the client switcher),
+- `clients/_template/` and the fictional `clients/K-00-example/`,
+- `modes/_custom.md` (coach mode), `config/local-paths.txt`, this file.
 
-Copyright (c) 2026 Way2Impact. All rights reserved unless a licence is added.
+Copyright (c) 2026 Way2Impact for the additions. The career-ops parts remain under the MIT License.

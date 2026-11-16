@@ -1,0 +1,49 @@
+# EXAMPLE (fictional client). Career-ops profile; sector details in config/impact.yml.
+candidate:
+  full_name: "Example Client"
+  email: "client@example.org"
+  phone: "+000 0000 0000"
+  location: "Amman, Jordan"
+  linkedin: "linkedin.com/in/example"
+  portfolio_url: ""
+  photo: ""
+
+target_roles:
+  primary:
+    - "MEAL Officer"
+    - "Monitoring and Evaluation Specialist"
+  archetypes:
+    - name: "MEAL Officer / Specialist"
+      level: "P-2 to P-3, NO-B, INGO Senior Officer"
+      fit: "primary"
+    - name: "Programme Officer (MEAL)"
+      level: "P-2, INGO Officer"
+      fit: "secondary"
+
+narrative:
+  headline: "MEAL Officer | Food security and cash | ECHO-funded programmes | Arabic, English, French"
+  exit_story: "Four years in INGO and national NGO MEAL, now moving up to UN or senior INGO MEAL roles."
+  superpowers:
+    - "Digital data collection (KoBoToolbox) at scale"
+    - "Post-distribution monitoring"
+  proof_points: []
+
+compensation:
+  target_range: "P-2/P-3 or INGO senior officer band"
+  currency: "USD"
+  minimum: "[ask client]"
+  location_flexibility: "Amman, Beirut, Nairobi or home-based"
+
+location:
+  country: "Jordan"
+  city: "Amman"
+  timezone: "Asia/Amman"
+  visa_status: ""
+  authorized_in: ["Fictionland"]
+  needs_sponsorship: true
+
+language:
+  output: en
+
+cv:
+  output_format: "html"

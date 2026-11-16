@@ -1,0 +1,20 @@
+# Coach settings. Edit freely.
+coach:
+  name: Kristin
+  brand: Way2Impact
+  website: https://way2impact.org
+  languages: [English, French, Arabic]
+  promise: "Passion brought you here. Positioning gets you hired."
+  programme: "4 live 1:1 sessions in 30 days: gap analysis and positioning; CV, cover letters and AI playbook; LinkedIn and networking; interview and test prep"
+
+defaults:
+  output_language: English         # switch per client or per job
+  cv_pages_ngo: 2                  # 3 allowed for senior staff and consultants (coach decision, 17 Nov 2026)
+  photo_default: none              # UN, INGO, donor: no photo. Gulf and Middle East corporate and CSR: photo permitted (impact/modes/cv.md §2)
+  skip_threshold: 4.0              # segment A uses 3.5 (impact/config/scoring.yml)
+  roundup_includes: [jobs, consultancies]   # no grants (coach decision, 16 Nov 2026)
+  courses_in_gap_analysis: true    # always free, affordable, premium; certificate first (coach decision, 16 Nov 2026)
+
+custom_rules:
+  # Rules the coach adds over time. One line each, with the date.
+  # - "2026-11-16: Never use the word 'beneficiaries' in motivation letters."

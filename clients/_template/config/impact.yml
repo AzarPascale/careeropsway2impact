@@ -1,0 +1,43 @@
+# Sector profile for this client (Way2Impact). Read by impact/RULES.md and the impact/modes overlays.
+# Career-ops identity, targets and pay live in config/profile.yml; keep the two consistent.
+code: K-XX               # client code only, never the name
+created: YYYY-MM-DD
+consent:
+  ai_use:                # yes / no. If not yes, the agent stops (impact/RULES.md section 5).
+  date:
+package:                 # Starter / Accompaniment / Accompaniment Plus / single service
+segment:                 # A new grads / B moving up / C shifters / D repositioning
+segment_note: ""
+
+targets:
+  roles: []              # 2 to 3 target roles, in sector words
+  sub_sectors: []        # for example food security, protection, MEAL, cash, climate
+  employer_types: []     # UN, INGO, national NGO, donor or embassy, foundation, CSR, social enterprise, consultancy
+  levels: []             # for example P-2, P-3, NO-B, G-6, INGO Senior Officer
+  keywords: []           # words to search for (also put them in portals.yml title_filter.positive)
+  locations_ok: []
+  remote_ok:
+  consultancy_ok:
+
+eligibility:             # hard gates are checked against this block; never guess it
+  nationalities: []
+  right_to_work: []
+  languages: {}          # Language: level (native, fluent, B2...). Be honest; UN tests them.
+  highest_degree: ""
+  years_relevant_experience:
+  age_for_ypp:           # only if the YPP is in play
+
+mobility:
+  family_duty_station_only:
+  non_family_ok:
+  high_risk_ok:
+
+needs:
+  pay_floor: ""          # also config/profile.yml compensation.minimum
+  urgency: ""
+  dealbreakers: []
+  learning_budget_usd:   # for the course tiers in the gap analysis
+
+files:
+  cv_received:
+  linkedin_received:
